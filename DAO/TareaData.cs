@@ -51,16 +51,17 @@ namespace DAO
             }
         }
 
-        public void modificarTarea(int idTarea,string descripcion,DateTime fechaTarea)
+        public void modificarTarea(TareaEntity tarea)
         {
             try
             {
                 using (var db = new ModeloTareaContext())
                 {
-                    Tarea tarea = db.Tareas.FirstOrDefault(e => e.Id == idTarea);
-                    if (tarea != null)
+                    Tarea tareadb = db.Tareas.FirstOrDefault(e => e.Id == tarea.Id);
+                    if (tareadb != null)
                     {
-                        tarea.FechaTarea = fechaTarea;
+                        tareadb.FechaTarea = tarea.FechaTarea;
+                        tareadb.DescripcionTarea = tarea.DescripcionTarea;
                         db.SaveChanges();
                     }
                 }

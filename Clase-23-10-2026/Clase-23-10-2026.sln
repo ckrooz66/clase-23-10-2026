@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase-23-10-2026", "Clase-23-10-2026.csproj", "{2B753A20-907D-44DE-AF58-C7FB15F686A0}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ENTITIES", "..\ENTITIES\ENTITIES.csproj", "{71E366BE-E282-49CA-AC6D-64300172E9E1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BSS", "..\BSS\BSS.csproj", "{EBF86061-C60E-4358-A651-5B888FB92D11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapper", "..\Mapper\Mapper.csproj", "{1C0C0D92-D453-572B-CB2B-95C5BA2E802A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{EBF86061-C60E-4358-A651-5B888FB92D11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBF86061-C60E-4358-A651-5B888FB92D11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBF86061-C60E-4358-A651-5B888FB92D11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C0C0D92-D453-572B-CB2B-95C5BA2E802A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C0C0D92-D453-572B-CB2B-95C5BA2E802A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C0C0D92-D453-572B-CB2B-95C5BA2E802A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C0C0D92-D453-572B-CB2B-95C5BA2E802A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

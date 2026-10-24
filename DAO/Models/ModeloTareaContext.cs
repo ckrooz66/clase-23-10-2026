@@ -25,7 +25,8 @@ public partial class ModeloTareaContext : DbContext
     {
         modelBuilder.Entity<Tarea>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Tareas__3214EC279360BC7D");
+            entity.ToTable("Tarea");
+            entity.HasKey(e => e.Id).HasName("PK__Tarea__3214EC2740EBBEC2");
 
             entity.Property(e => e.Id).HasColumnName("ID");
             entity.Property(e => e.DescripcionTarea)

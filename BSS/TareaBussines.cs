@@ -74,17 +74,29 @@ namespace BSS
                     throw new Exception("El ID debe ser mayor que cero");
                 }
 
-                TareaEntity tarea = tareaData.getById(idTarea);
-                if (tarea == null)
+                if (descripcion.Length < 5)
+                {
+                    throw new Exception("La descripcion debe ser de al menos 5 caracteres.");
+                }
+
+                TareaEntity tareadb = tareaData.getById(idTarea);
+                if (tareadb == null)
                 {
                     throw new Exception("No existe la entrada indicada");
                 }
 
-                if (nuevaFecha < DateTime.Now)
+                if (nuevaFecha.Date < DateTime.Now.Date)
                 {
                     throw new Exception("No se permite ingresar una fecha anterior a la fecha actual");
                 } 
-                tareaData.modificarTarea(idTarea, descripcion,nuevaFecha);
+
+                TareaEntity tarea = new TareaEntity
+                {
+                    Id = idTarea,
+                    DescripcionTarea = descripcion,
+                    FechaTarea = nuevaFecha
+                };
+                tareaData.modificarTarea(tarea);
             }
             catch (Exception ex)
             {
