@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase-23-10-2026", "Clase-2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAO", "..\DAO\DAO.csproj", "{C7552CD3-D2DA-4C5A-B4BA-0711F0D0D92A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ENTITIES", "..\ENTITIES\ENTITIES.csproj", "{71E366BE-E282-49CA-AC6D-64300172E9E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BSS", "..\BSS\BSS.csproj", "{EBF86061-C60E-4358-A651-5B888FB92D11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{C7552CD3-D2DA-4C5A-B4BA-0711F0D0D92A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7552CD3-D2DA-4C5A-B4BA-0711F0D0D92A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7552CD3-D2DA-4C5A-B4BA-0711F0D0D92A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71E366BE-E282-49CA-AC6D-64300172E9E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71E366BE-E282-49CA-AC6D-64300172E9E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71E366BE-E282-49CA-AC6D-64300172E9E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71E366BE-E282-49CA-AC6D-64300172E9E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBF86061-C60E-4358-A651-5B888FB92D11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBF86061-C60E-4358-A651-5B888FB92D11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBF86061-C60E-4358-A651-5B888FB92D11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBF86061-C60E-4358-A651-5B888FB92D11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
