@@ -1,28 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
+using ENTITIES.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace DAO.Models;
 
-public partial class ModeloParcialContext : DbContext
+public partial class ModeloTareaContext : DbContext
 {
-    public ModeloParcialContext()
+    public ModeloTareaContext()
     {
     }
 
-    public ModeloParcialContext(DbContextOptions<ModeloParcialContext> options)
+    public ModeloTareaContext(DbContextOptions<ModeloTareaContext> options)
         : base(options)
     {
     }
 
-    public virtual DbSet<Tareas> Tareas { get; set; }
+    public virtual DbSet<Tarea> Tareas { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
          => optionsBuilder.UseSqlServer(ConectionStringHelper.getConnectionString());
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Tareas>(entity =>
+        modelBuilder.Entity<Tarea>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__Tareas__3214EC279360BC7D");
 

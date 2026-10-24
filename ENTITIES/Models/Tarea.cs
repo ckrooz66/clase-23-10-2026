@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DAO.Models;
+namespace ENTITIES.Models;
 
-public partial class Tareas
+public  class Tarea
 {
     public int Id { get; set; }
 
